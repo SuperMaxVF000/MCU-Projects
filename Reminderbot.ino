@@ -5,9 +5,9 @@
 #include <EEPROM.h>
 
 // ======= НАСТРОЙКИ =======
-#define WIFI_SSID     "sh"
-#define WIFI_PASSWORD "454334265120"
-#define BOT_TOKEN     "8674973285:AAHKRZM7DH2yQODEoGiopJi7oko59d6xWxo"
+#define WIFI_SSID     "SSID"
+#define WIFI_PASSWORD "PASSWORD"
+#define BOT_TOKEN     "BOT_TOKEN"
 #define TIMEZONE      3          // Москва UTC+3 (измени под себя)
 // =========================
 
@@ -21,7 +21,7 @@ WiFiClientSecure client;
 UniversalTelegramBot bot(BOT_TOKEN, client);
 unsigned long lastTimeBotRan = 0;
 
-// ===== Структура напоминания =====
+//Структура напоминания
 struct Reminder {
   int    hour;
   int    minute;
