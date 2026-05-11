@@ -6,9 +6,9 @@
 #include "SSD1306Wire.h" // Твоя победная библиотека!
 
 // --- НАСТРОЙКИ WI-FI И ТЕЛЕГРАМ ---
-const char* ssid = "sh";
-const char* password = "454334265120";
-const char* botToken = "8190164913:AAExtCm1bl7UCjU26DqgFBn-hEQk06G67v0";
+const char* ssid = "SSID";
+const char* password = "PASSWORD";
+const char* botToken = "BOT_TOKEN";
 
 WiFiClientSecure client;
 UniversalTelegramBot bot(botToken, client);
