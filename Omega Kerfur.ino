@@ -1,10 +1,8 @@
-// ============================================================
 //  Omega Kerfur — Face Animation v4
 //  NORMAL:   OwO
 //  BLINKING: -w-
 //  HAPPY:    >w<
 //  Одна строка, по центру синей зоны (Y 16..63)
-// ============================================================
 
 #include <ESP8266WiFi.h>
 #include <WiFiClientSecure.h>
@@ -12,9 +10,9 @@
 #include <Wire.h>
 #include "SSD1306Wire.h"
 
-const char* WIFI_SSID     = "YOUR_SSID";
-const char* WIFI_PASSWORD = "YOUR_PASSWORD";
-const char* BOT_TOKEN     = "YOUR_BOT_TOKEN";
+const char* WIFI_SSID     = "SSID";
+const char* WIFI_PASSWORD = "PASSWORD";
+const char* BOT_TOKEN     = "BOT_TOKEN";
 
 SSD1306Wire display(0x3C, D5, D6);
 
@@ -39,7 +37,7 @@ void scheduleNextBlink() {
   nextBlinkTime = millis() + random(BLINK_MIN_MS, BLINK_MAX_MS + 1);
 }
 
-// ── Отрисовка ────────────────────────────────────────────────
+// Отрисовка
 void drawFace() {
   display.clear();
   display.setTextAlignment(TEXT_ALIGN_CENTER);
@@ -58,7 +56,7 @@ void drawFace() {
   display.display();
 }
 
-// ── Машина состояний ─────────────────────────────────────────
+// Машина состояний
 void updateFace() {
   unsigned long now = millis();
 
@@ -84,7 +82,7 @@ void updateFace() {
   }
 }
 
-// ── Telegram ─────────────────────────────────────────────────
+// Telegram
 void handleNewMessages(int n) {
   for (int i = 0; i < n; i++) {
     String text    = bot.messages[i].text;
@@ -100,7 +98,7 @@ void handleNewMessages(int n) {
   }
 }
 
-// ── Setup / Loop ─────────────────────────────────────────────
+// Setup / Loop
 void setup() {
   Serial.begin(115200);
   randomSeed(analogRead(A0));
