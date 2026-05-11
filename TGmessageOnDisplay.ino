@@ -3,7 +3,7 @@
 #include <UniversalTelegramBot.h>
 #include <ArduinoJson.h>
 #include <Wire.h>
-#include "SSD1306Wire.h" // Твоя победная библиотека!
+#include "SSD1306Wire.h" // библиотека от Think Pulse
 
 // --- НАСТРОЙКИ WI-FI И ТЕЛЕГРАМ ---
 const char* ssid = "SSID";
