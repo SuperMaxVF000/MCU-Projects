@@ -17,12 +17,12 @@
 // ──────────────────────────────────────────────
 //  НАСТРОЙКИ — заполни перед прошивкой
 // ──────────────────────────────────────────────
-const char* WIFI_SSID     = "YOUR_WIFI_SSID";
-const char* WIFI_PASSWORD = "YOUR_WIFI_PASSWORD";
-const char* BOT_TOKEN     = "YOUR_TELEGRAM_BOT_TOKEN";
+const char* WIFI_SSID     = "WIFI_SSID";
+const char* WIFI_PASSWORD = "WIFI_PASSWORD";
+const char* BOT_TOKEN     = "TELEGRAM_BOT_TOKEN";
 
 // ExchangeRate-API (бесплатный ключ на https://www.exchangerate-api.com)
-const char* EXCHANGE_API_KEY = "YOUR_EXCHANGERATE_API_KEY";
+const char* EXCHANGE_API_KEY = "EXCHANGERATE_API_KEY";
 
 // ──────────────────────────────────────────────
 //  HARDWARE
